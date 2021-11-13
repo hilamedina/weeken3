@@ -1,6 +1,6 @@
 function YearsAndCenturies(x){
     let year = parseInt(x);
-    if ((year % 10 == 0) && (year % 100 == 0)){
+    if (year % 100 == 0){
         return year / 100;
     }
     else {
@@ -8,7 +8,7 @@ function YearsAndCenturies(x){
         return (answer/ 100) + 1;
     }
 }
-let x = 1900;
+let x = 1917;
 console.log(YearsAndCenturies(x));
 
 // console.log(YearsAndCenturies(x));
