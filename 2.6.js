@@ -11,6 +11,4 @@ function YearsAndCenturies(x){
 let x = 1917;
 console.log(YearsAndCenturies(x));
 
-// console.log(YearsAndCenturies(x));
-// console.log(1917 - (1917 % 100));
 
