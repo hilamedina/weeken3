@@ -1,10 +1,17 @@
-function mask(str){
-    let l = str.length;
-    for (let i = 0; i <= str.length -1; i++){
-        if (str[i] < (l - 4)){
-         let str1 =  str1 + str.ReplaceAt(i , "h");
-        }
+function longestWord(sentence)
+{
+  let strtoarray = sentence.split(' ');
+  let l = strtoarray[0].length;
+  let thelongest = [ ];
+  for (let i = 1; i <= strtoarray.length - 1; i++)
+  {
+    if (strtoarray[i].length > l || strtoarray[i].length == l)
+    {
+      l = strtoarray[i].length;
+     thelongest.push(strtoarray[i]);
     }
-    return str1;
+ }
+  return thelongest;
 }
-console.log(mask("medina"));
+let sentence = "hila and tala goinguh hungary"
+console.log(longestWord(sentence));
